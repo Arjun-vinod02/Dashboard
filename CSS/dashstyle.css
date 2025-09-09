@@ -54,6 +54,12 @@ body {
   color: rgb(255, 67, 67);
 }
 
+.busy-mode {
+  margin-top: 200px;
+  font-size: 14px;
+}
+
+
 .main {
   flex: 2;
   padding: 20px;
@@ -418,7 +424,6 @@ input:checked + .slider:before {
   .orders table,
   .orders thead,
   .orders tbody,
-
   .orders td,
   .orders tr {
     display: grid;
@@ -440,10 +445,6 @@ input:checked + .slider:before {
     background: white;
     justify-content: flex-end;
   }
-
-  
-
-
 
 
 } 
