@@ -21,7 +21,6 @@ body {
 .sidebar {
   width: 150px;
   background: white;
-  /* border-right: 1px solid #eee; */
   padding: 20px;
 
 }
@@ -416,16 +415,13 @@ input:checked + .slider:before {
 
   .sidebar {
     display: none;
-    grid-auto-flow: column;
+    
   }
 
-  .main-card {
-    flex-direction: row;
-  }
 
   .stats{
-    display: grid;
-    grid-template-rows: auto;
+    display: flex;
+    flex-wrap: wrap;
   }
 
 
@@ -433,14 +429,18 @@ input:checked + .slider:before {
   .orders table,
   .orders thead,
   .orders tbody,
-  .orders th,
+
   .orders td,
   .orders tr {
-    display: block;
+    display: grid;
+    align-items: right;
+    
   }
 
-  .orders thead {
-    display: none;
+  .orders thead,  .orders th {
+    display: grid;
+    align-items: left;
+    
   }
 
   .orders tr {
@@ -449,17 +449,8 @@ input:checked + .slider:before {
     border-radius: 8px;
     padding: 10px;
     background: white;
+    justify-content: right;
   }
 
-  .orders td {
-    display: flex;
-    justify-content: space-between;
-    padding: 8px;
-    border: none;
-    box-shadow: none;
-  }
-
-
-
-
-}
+  
+} 
