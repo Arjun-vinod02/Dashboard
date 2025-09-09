@@ -1,0 +1,465 @@
+body {
+  font-family:'Poppins', sans-serif;
+  color: #0f172a;
+  background: #fcd6d6;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.main-card {
+  display: flex;
+  margin: 20px;
+  background: white;
+  border-radius: 16px;
+  overflow: auto;
+  width: 100%;
+  max-width: 1300px;
+}
+
+
+.sidebar {
+  width: 150px;
+  background: white;
+  /* border-right: 1px solid #eee; */
+  padding: 20px;
+
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+
+.sidebar .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+}
+
+.sidebar .menu a {
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #64748b;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sidebar .menu a:hover,
+.sidebar .menu a.active {
+  background: #ffcaca;
+  color: rgb(255, 67, 67);
+}
+
+
+.busy-mode {
+  margin-top: 200px;
+  font-size: 14px;
+}
+
+
+
+.main {
+  flex: 2;
+  padding: 20px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.topbar input {
+  width: 200px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.topbar .right-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.user-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 6px 10px;
+  width: 220px;
+}
+
+.search-box img.icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+
+
+.time {
+  width: 20px;
+  height: 20px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+
+.red-card {
+  background: #fff7f7;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.card-white {
+  flex: 1;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.card-white h3 {
+  font-size: 32px;
+  margin-bottom: 3px;
+}
+
+.card-white img {
+  border-radius: 20px;
+  size: 20px;
+}
+
+.yellow-card {
+  background-color: yellow;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.blue-card {
+  background-color: rgb(4, 0, 255);
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.light-card {
+  background-color: rgb(1, 247, 255);
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 12px;
+}
+
+.order-icon {
+  width: 50px;
+  height: 50px;
+
+
+}
+
+
+.orders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.orders-header select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.orders table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+}
+
+.orders th {
+  background: white;
+  text-align: left;
+  padding: 10px;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.orders td {
+  background: white;
+  padding: 14px;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  font-weight: 400;
+}
+
+.orders tr th:first-child,
+.orders tr td:first-child {
+  border-radius: 12px 0 0 12px;
+}
+
+.orders tr th:last-child,
+.orders tr td:last-child {
+  border-radius: 0 12px 12px 0;
+}
+
+.table-card {
+  background: white;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.0.5);
+  margin-bottom: 20px;
+}
+
+.table-card:hover,
+.card-white:hover {
+  transform: translate(18px) scale(1);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.50);
+}
+
+.type {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.type.delivery {
+  color: #f54f4f;
+}
+
+.type.collection {
+  color: #64748b;
+}
+
+.status {
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
+
+.status.onway {
+  background: #e9eaeb;
+  color: #fbbf24;
+}
+
+.status.ready {
+  background: #ef4444;
+}
+
+.cancel {
+  color: #f54f4f;
+}
+
+
+
+.action {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 28px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+
+}
+
+.dropdown-menu li:hover {
+  background: #f9fafc;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+/*  Toggle button */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 15px;
+}
+
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ebebeb;
+
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 0;
+  bottom: 0px;
+  background-color: rgb(0, 0, 0);
+    
+}
+
+input:checked + .slider {
+  background-color: #ccc;
+}
+
+
+
+input:checked + .slider:before {
+  
+  transform: translateX(10px); 
+  background-color: green;
+}
+
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+
+@media (max-width: 800px) {
+  
+
+  .sidebar {
+    display: none;
+    grid-auto-flow: column;
+  }
+
+  .main-card {
+    flex-direction: row;
+  }
+
+  .stats{
+    display: grid;
+    grid-template-rows: auto;
+  }
+
+
+
+  .orders table,
+  .orders thead,
+  .orders tbody,
+  .orders th,
+  .orders td,
+  .orders tr {
+    display: block;
+  }
+
+  .orders thead {
+    display: none;
+  }
+
+  .orders tr {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background: white;
+  }
+
+  .orders td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border: none;
+    box-shadow: none;
+  }
+
+
+
+
+}
