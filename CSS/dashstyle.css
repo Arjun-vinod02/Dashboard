@@ -54,14 +54,6 @@ body {
   color: rgb(255, 67, 67);
 }
 
-
-.busy-mode {
-  margin-top: 200px;
-  font-size: 14px;
-}
-
-
-
 .main {
   flex: 2;
   padding: 20px;
@@ -165,10 +157,7 @@ body {
   margin-bottom: 3px;
 }
 
-.card-white img {
-  border-radius: 20px;
-  size: 20px;
-}
+
 
 .yellow-card {
   background-color: yellow;
@@ -253,7 +242,7 @@ body {
   background: white;
   border-radius: 8px;
   padding: 25px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.0.5);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   margin-bottom: 20px;
 }
 
@@ -433,13 +422,13 @@ input:checked + .slider:before {
   .orders td,
   .orders tr {
     display: grid;
-    align-items: right;
+    align-items: end;
     
   }
 
   .orders thead,  .orders th {
     display: grid;
-    align-items: left;
+    align-items: end;
     
   }
 
@@ -449,8 +438,12 @@ input:checked + .slider:before {
     border-radius: 8px;
     padding: 10px;
     background: white;
-    justify-content: right;
+    justify-content: flex-end;
   }
 
   
+
+
+
+
 } 
